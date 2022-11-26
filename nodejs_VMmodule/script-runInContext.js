@@ -1,4 +1,7 @@
-t util = require('util');
+// Node.js program to demonstrate the script.runInContext() method
+
+// Including util and vm module
+const util = require('util');
 const vm = require('vm');
 
 // Constructing context
@@ -14,7 +17,7 @@ const script = new vm.Script('articles *= 10;');
  vm.createContext(contextobj);
 
 // Calling runInContext method
-script.runInContext(contextobj):
+script.runInContext(contextobj);
 
 // Displays output
 console.log(contextobj);
