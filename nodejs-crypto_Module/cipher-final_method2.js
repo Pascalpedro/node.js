@@ -19,4 +19,10 @@ crypto.scrypt(password, 'salt', 24,
         // Creating and initializing the cipher object
         const cipher = crypto
              .createCipheriv(algorithm, key, iv);
-															   
+
+        // Getting buffer value by using final() method
+		let value = cipher.final('hex');
+
+        // Display the result
+		console.log("buffer :- " + value);
+});
